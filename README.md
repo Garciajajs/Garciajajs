@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./src/https://drive.google.com/file/d/1qm_LsLl_IiNQtUFmj4rDbAfRsaWc3ZPM/view?usp=drivesdk" width="140" height="140"/>
+<img src="./https://drive.google.com/file/d/1qm_LsLl_IiNQtUFmj4rDbAfRsaWc3ZPM/view?usp=drivesdk" width="140" height="140"/>
 </p>
 <p align="center">
 <a href="#"><img title="NyanBot" src="https://img.shields.io/badge/𝙶𝚊𝚛𝚌𝚒𝚊𝚋𝚘𝚝💫 | 𝗚𝗮𝗿𝗰𝗶𝗮 | 𝐆𝐚𝐫𝐜𝐢𝐚 𝐞𝐬 𝐦𝐮𝐲 𝐩𝐫𝐨 𝐩𝐪-black?colorA=%23ff0000&colorB=%23000000&style=for-the-badge"></a>
