@@ -84,14 +84,14 @@ const owner = config.owner
 const mods = config.mods
 const fake = 'Sm330'
 var public = config.public
-////////////▶ 𝐒𝐚𝐦𝐮𝟑𝟑𝟎 | 𝐒𝐚𝐦 𝐲 𝐏𝐞𝐫𝐫𝐲
+////////////▶ Garcia | GarciaBot
 conn.connect()
 const samu330 = conn.samu330
-////////////▶ 𝐒𝐚𝐦𝐮𝟑𝟑𝟎 | 𝐒𝐚𝐦 𝐲 𝐏𝐞𝐫𝐫𝐲
+////////////▶ Garcia | GarciaBot
 const sleep = async (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-////////////▶ 𝐒𝐚𝐦𝐮𝟑𝟑𝟎 | 𝐒𝐚𝐦 𝐲 𝐏𝐞𝐫𝐫𝐲
+////////////▶ Garcia | GarciaBot
 api = 'CONTACTAME PARA OBTENER LA API'
 fak = 'samu3300'
 prefix = '.'
@@ -157,7 +157,7 @@ message: {
 await sleep(4000)
 await samu330.blockUser(callerId, "add")
 })
-////////////▶ 𝐒𝐚𝐦𝐮𝟑𝟑𝟎 | 𝐒𝐚𝐦 𝐲 𝐏𝐞𝐫𝐫𝐲
+////////////▶ Garcia | GarciaBot
 samu330.on('CB:action,,battery', json => {
 global.batteryLevelStr = json[2][0][1].value
 global.batterylevel = parseInt(batteryLevelStr)
@@ -166,7 +166,7 @@ if (json[2][0][1].live == 'true') charging = true
 if (json[2][0][1].live == 'false') charging = false
 console.log(chalk.greenBright("├"), chalk.keyword("magenta")("[ 🔋Nivel de carga de la bateria ]"), chalk.greenBright(batterylevel+'%'), chalk.keyword("cyan")("Esta cargando?"), chalk.keyword("yellow")(charging))	
 })
-////////////▶ 𝐒𝐚𝐦𝐮𝟑𝟑𝟎 | 𝐒𝐚𝐦 𝐲 𝐏𝐞𝐫𝐫𝐲
+////////////▶ Garcia | GarciaBot
 samu330.on('blocklist-update', async (chat) => {
 for (i of chat.added){
 target = i.replace('@c.us', '@s.whatsapp.net')
@@ -179,7 +179,7 @@ blocked.splice(blocked.indexOf(target), 1)
 console.log(chalk.greenBright("├"), chalk.keyword("green")("[ NUEVO USUARIO DESBLOQUEADO ]"), chalk.keyword("cyan")(target))
 }
 })
-////////////▶ 𝐒𝐚𝐦𝐮𝟑𝟑𝟎 | 𝐒𝐚𝐦 𝐲 𝐏𝐞𝐫𝐫𝐲
+////////////▶ Garcia | GarciaBot
 samu330.on('group-update', async(chat) => {
 var donde = chat.jid
 var group = await samu330.groupMetadata(donde)
@@ -190,7 +190,7 @@ samu330.sendMessage(group.id, mensajeDesc, MessageType.text)
 console.log(chalk.greenBright("├"), chalk.keyword("yellow")("[ DESCRIPCION CAMBIADA ]"), chalk.keyword("cyan")('grupo'), chalk.keyword("green")(`${group.subject}`))
 }
 })
-////////////▶ 𝐒𝐚𝐦𝐮𝟑𝟑𝟎 | 𝐒𝐚𝐦 𝐲 𝐏𝐞𝐫𝐫𝐲
+////////////▶ Garcia | GarciaBot
 samu330.on('group-participants-update', async (anu) => {
 if (!welkom.includes(anu.jid)) return
 try {
@@ -257,9 +257,9 @@ samu330.sendMessage(mdata.id, `😙Hola, @${num.split('@')[0]}, _*Bienvenido a $
 //leave
 }  else if (anu.action == 'remove') {
 num = anu.participants[0]
-teks = `_Weno ps.... amm😪...  @${num.split('@')[0]} se nos fue, ni llorar es bueno:)_
-_*Ojala y le baya bien, y mas despues..... que lo atropelle un tren!!🚉🤣*_
-*No se awiten gente, esten seguros que nadie lo extrañara:D*`
+teks = `_bueno pues... amm😪...  @${num.split('@')[0]} se nos fue, ni llorar es bueno:)_
+_*Ojala y le baya bien, y mas despues... que lo atropelle un tren*_
+*No se awiten gente, esten seguros que nadie lo extrañara al wn:D*`
 samu330.sendMessage(mdata.id, teks, MessageType.text,{ contextInfo: {"mentionedJid": [num]}})
 
 } else if (anu.action == 'promote') {
@@ -289,7 +289,7 @@ samu330.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextIn
 console.log('Error : %s', color(e, 'red'))
 }
 })
-////////////▶ 𝐒𝐚𝐦𝐮𝟑𝟑𝟎 | 𝐒𝐚𝐦 𝐲 𝐏𝐞𝐫𝐫𝐲
+////////////▶ Garcia | GarciaBot
 samu330.on('chat-update', async(sam) => {
     try {
         if (!sam.hasNewMessage) return
@@ -308,7 +308,7 @@ samu330.on('chat-update', async(sam) => {
         chats = (type === 'conversation') ? sam.message.conversation : (type === 'extendedTextMessage') ? sam.message.extendedTextMessage.text : ''
         budy = (type === 'conversation' && sam.message.conversation.startsWith(prefix)) ? sam.message.conversation : (type == 'imageMessage') && sam.message.imageMessage.caption.startsWith(prefix) ? sam.message.imageMessage.caption : (type == 'videoMessage') && sam.message.videoMessage.caption.startsWith(prefix) ? sam.message.videoMessage.caption : (type == 'extendedTextMessage') && sam.message.extendedTextMessage.text.startsWith(prefix) ? sam.message.extendedTextMessage.text : ''
 	//budy = (type === 'conversation') ? sam.message.conversation : (type === 'extendedTextMessage') ? sam.message.extendedTextMessage.text : (type === 'listResponseMessage') ? sam.message.listResponseMessage.title : ''
-	////////////▶ 𝐒𝐚𝐦𝐮𝟑𝟑𝟎 | 𝐒𝐚𝐦 𝐲 𝐏𝐞𝐫𝐫𝐲
+	////////////▶ Garcia | GarciaBot
         if (prefix != "") {
         if (!body.startsWith(prefix)) {
         cmd = false
@@ -322,7 +322,7 @@ samu330.on('chat-update', async(sam) => {
         comm = body.trim().split(" ").shift().toLowerCase()
         }
 	    
-	////////////▶ 𝐒𝐚𝐦𝐮𝟑𝟑𝟎 | 𝐒𝐚𝐦 𝐲 𝐏𝐞𝐫𝐫𝐲
+	////////////▶ Garcia | GarciaBot
 
 	const uploadImages = (filePath) => {
 	return new Promise(async (resolve, reject) => {
@@ -422,7 +422,7 @@ samu330.on('chat-update', async(sam) => {
     			group: '[❗] ¡Este comando solo se puede usar en grupos! ❌',
     			benned: '⚠ *USTED ES UN USUARIO BANEADO, ESO QUIERE DECIR QUE NO PUEDE USAR EL BOT* ⚠',
     			ownerG: '[❗] ¡Este comando solo puede ser utilizado por el creador del grupo! ❌',
-    			ownerB: '[❗] ¡Este comando solo puede ser utilizado por el creador del bot! ❌\nOsea, Samu: wa.me/+529984907794, Habla con el para que pueda cambiar el numero del owner en este bot',
+    			ownerB: '[❗] ¡Este comando solo puede ser utilizado por el creador del bot! ❌\nOsea, Samu: wa.me/+522499995868, Habla con el para que pueda cambiar el numero del owner en este bot',
     			admin: '[❗] ¡Este comando solo puede ser utilizado por administradores del grupo! ❌',
     			Badmin: '[❗] ¡Este comando solo se puede usar cuando el bot es administrador! ❌',
     			usrReg: `Usuario no *Registrado*\n_Para registrarte usa el comando_: *${prefix}reg*`
@@ -636,7 +636,7 @@ samu330.on('chat-update', async(sam) => {
 		"description": "𝙍𝙚𝙜𝙞𝙨𝙩𝙧𝙖𝙩𝙚",
 		"currencyCode": "SYP",
 		"priceAmount1000": "999999999999999999",
-		"retailerId": "NyanBot",
+		"retailerId": "GarciaBot",
 		"productImageCount": 1
 		},
 		"businessOwnerJid": `0@s.whatsapp.net`
@@ -729,7 +729,7 @@ message: {
 "mimetype": "image/jpeg",
 "jpegThumbnail": fs.readFileSync(`./src/fake.jpg`)
 },
-"title": `🐉𝗦𝗮𝗺𝘂𝟯𝟯𝟬🔥 | 📌𝑵𝒚𝒂𝒏𝑩𝒐𝒕🌹 ${timeFt}`,
+"title": `Garcia💫 | GarciaBot ${timeFt}`,
 "description": "",
 "currencyCode": "SYP",
 "priceAmount1000": "999999999999999999",
@@ -877,13 +877,13 @@ mentionedJid: [sender]}
 	    	if (messagesC.includes("chat.whatsapp")){
 		        if (!isGroup) return
 		        if (!isAntigp) return
-		        if (isAdmin) return reply('Tienes suerte, eres admin y no te sacaré')
-			reply(`Link detectado ${sender.split("@")[0]} serás expulsado de este grupo`)
+		        if (isAdmin) return reply('Tienes suerte, eres admin y no te sacaré😩😩')
+			reply(`Link detectado😾 ${sender.split("@")[0]} serás expulsado de este grupo`)
 			samu330.groupRemove(from, [sender])
 		}
 
 	    
-	    ///////////////////////FUNCIONES CREADAS POR SAMU330\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	    ///////////////////////FUNCIONES CREADAS POR GARCIA\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 	    
 			if (isGroup && botAdmin && isAntiMedia) {     
 			if (!itsMe) {
@@ -906,7 +906,7 @@ mentionedJid: [sender]}
 			if (isGroup && botAdmin && isAntiLeg) {      
 			if (!itsMe) {
 			if (isAudio) {
-			if (isAdmin) reply(`😒che admin pndejo, enves que des el ejemplo, ya que el Antilegiones esta activado, osea que no se permiten toda clase de mensajes que puedan ser travas... pero noooo... como eres admin te crees la gran vrg no?🙄\n*Pues conmigo te jodiste😑*\nALV por puto👿`)
+			if (isAdmin) reply(`admin pndejo, enves que des el ejemplo, ya que el Antilegiones esta activado, osea que no se permiten toda clase de mensajes que puedan ser travas... pero noooo... como eres admin te crees la gran vrg no?🙄\n*Pues conmigo te jodiste😑*\nALV por puto👿`)
 				reply(`*AUDIO DETECTADO, EN ESTE GRUPO NO SE PERMITEN LOS AUDIOS, YA QUE ESTAN ACTIVADOS LOS COMANDOS ANTILEGIONES, POR SEGURIDAD TE ELIMINARE*\n\n🛃 ESTE GRUPO ESTA PROTEGIDO POR:\n𝚂𝚊𝚖𝚞𝟹𝟹𝟶® | NyanBot™\n\n*🐉Samu330*`)
 				samu330.groupRemove(from, [sender])
 			}
@@ -915,7 +915,7 @@ mentionedJid: [sender]}
 			if (isGroup && botAdmin && isAntiLeg) {                                                                	  
 			if (!itsMe) {                        
 			if (isContact) {
-                        if (isAdmin) reply(`😒che admin pndejo, enves que des el ejemplo, ya que el Antilegiones esta activado, osea que no se permiten toda clase de mensajes que puedan ser travas... pero noooo... como eres admin te crees la gran vrg no?🙄\n*Pues conmigo te jodiste😑*\nALV por puto👿`)                                                                  
+                        if (isAdmin) reply(`admin pndejo, enves que des el ejemplo, ya que el Antilegiones esta activado, osea que no se permiten toda clase de mensajes que puedan ser travas... pero noooo... como eres admin te crees la gran vrg no?🙄\n*Pues conmigo te jodiste😑*\nALV por puto👿`)                                                                  
 				reply(`*CONTACTO DETECTADO, EN ESTE GRUPO NO SE PERMITEN LOS AUDIOS, YA QUE ESTAN ACTIVADOS LOS COMANDOS ANTILEGIONES, POR SEGURIDAD TE ELIMINARE*\n\n🛃 ESTE GRUPO ESTA PROTEGIDO POR:\n𝚂𝚊𝚖𝚞𝟹𝟹𝟶® | NyanBot™\n\n*🐉Samu330*`)
 				samu330.groupRemove(from, [sender])              
 			}               
@@ -937,7 +937,7 @@ mentionedJid: [sender]}
 			if (isGroup && botAdmin && isAntiLeg) {                                                         	  
 			if (!itsMe) {                                 
 			if (isLocation) {
-                        if (isAdmin) reply(`😒che admin pndejo, enves que des el ejemplo, ya que el Antilegiones esta activado, osea que no se permiten toda clase de mensajes que puedan ser travas... pero noooo... como eres admin te crees la gran vrg no?🙄\n*Pues conmigo te jodiste😑*\nALV por puto👿`)                                                                     
+                        if (isAdmin) reply(`admin pndejo, enves que des el ejemplo, ya que el Antilegiones esta activado, osea que no se permiten toda clase de mensajes que puedan ser travas... pero noooo... como eres admin te crees la gran vrg no?🙄\n*Pues conmigo te jodiste😑*\nALV por puto👿`)                                                                     
 				reply(`*LOCALIZACION DETECTADA, EN ESTE GRUPO NO SE PERMITEN LOS AUDIOS, YA QUE ESTAN ACTIVADOS LOS COMANDOS ANTILEGIONES, POR SEGURIDAD TE ELIMINARE*\n\n🛃 ESTE GRUPO ESTA PROTEGIDO POR:\n𝚂𝚊𝚖𝚞𝟹𝟹𝟶® | NyanBot™\n\n*🐉Samu330*`)                   
 				samu330.groupRemove(from, [sender])           
 			}             
@@ -951,7 +951,7 @@ case 'help':
 case 'menu':
 case 'comandos':
 
-redes = ['*Sigeme y te sigo en instagram!* https://www.instagram.com/samu330wabot', '*😊Seamos amigos en facebook!!* https://www.facebook.com/samu330wabot']
+redes = ['*Sigeme en instagram!* https://www.instagram.com/Garciajajs', '']
 opcion = redes[Math.floor(Math.random() * redes.length)]
 
 var num = sam.participant
@@ -965,7 +965,7 @@ uptime = process.uptime()
 if (!isRegister) return samu330.sendMessage(from, assistant, image, { quoted: noreg, caption: `😊Hola, ${timeFt}.\n*Yo soy Sam330*, Asistente de *Samu330*!.\n\nAl parecer no estas registrado en _*NyanBot*_, Para registrarte usa el comando: *${prefix}reg*.`, thumbnail: assistant, contextInfo: {"forwardingScore": 999, "isForwarded": true}})
 try {		
 Menu = `
-➫ြ𝚜ᷤ𝚊ͣ𝚖ͫ𝚞𝉄𖾔𖾔𖽙😈.li Oℱịcιɑl.li
+
 🔐Hola *${pushname}* ${timeFt}
 
 _Tipo de usuario:_ ${tipoDeUsr}
@@ -977,9 +977,9 @@ _Tipo de usuario:_ ${tipoDeUsr}
 
 🌹ڰۣڿڰۣڿஇღԑ̮̑ঙღڰۣڿڰۣڿஇ🌹
 
-_Si quieres saber como crear este bot, usa el comando:_
+_Si quieres saber como crear este bot, comunícate con el dueño Mex wa.me/+522499995868 Arg wa.me/+5493876641735 Chile wa.me/+56965523316_
 
-${prefix}crear
+
 
 🌹ڰۣڿڰۣڿஇღԑ̮̑ঙღڰۣڿڰۣڿஇ🌹
 
@@ -1010,9 +1010,8 @@ ${samu} ✏Prefijo:${samu} [ ${prefix} ]
 ${samu} 🕐Tiempo de actividad:${samu} *${uptime}*
 ${samu} ✅Modo:${samu} *ON*
 ${samu} 👥Grupo:${samu} *${groupName}*
-${samu} 🏆Numero del Dueño wa.link/wpnz32${samu}
 
-𝗠𝗬 𝗖𝗔𝗡𝗔𝗟 𝗗𝗘 𝗬𝗢𝗨𝗧𝗨.𝗕𝗘: shrtco.de/CanalDeSamu
+
 
 ⍣ *BOT INFO* ⍣
 ${samu}◦ 🌐Navegador :${samu} *${samu330.browserDescription[1]}*
@@ -1615,17 +1614,7 @@ _Estos comandos solo pueden ser utilizados en grupos, y solo los puede uzar ${bo
 🔥 ${prefix}crashcom
 🔥 ${prefix}crashpc
 
-💠Si quieres ser inmune a estos comandos, Samu a creado un WhatsApp que soporta estos bugs, si quieres probar este WhatsApp comunicate con el:
-
-*wa.me/+529984907794*
-
-O bien puedes descargar desde el enlace...
-
-https://www.mediafire.com/file/3srfb3tledxwg87/Inmune_Crash_Bot%25E2%259C%258F%25EF%25B8%258F.apk/file
-
-Si quieres tener este bot, y usar tu los comandos, ve como se instala aqui:
-
-_https://www.youtube.com/watch?v=rOPBe6O-k3M_`
+`
 
 samu330.sendMessage(from, smww, image, {caption: `${menu9}`, quoted: { key: { 
 	fromMe: false, 
@@ -1635,7 +1624,22 @@ samu330.sendMessage(from, smww, image, {caption: `${menu9}`, quoted: { key: {
 				"imageMessage": { 
 				"mimetype": 
 				"image/jpeg", 
-				"caption": "➫'*👑Samu330 Crashing Groups!!🔥*'\n'😈Samu330 Domina🥀'" ,
+				"caption": "➫'*👑 Garcia Crashing Groups!!🔥*'\n'‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎ွဳ⃟ 𝖦𝖺𝗋𝖼𝗂𝖺𝖣𝖮𝖬𝖨𝖭𝖠☆ ፝͜🇲🇽‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎
+
+‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎𝑍𝑧𝑧  💤   𝑍𝑧𝑧   💤   𝑍𝑧𝑧
+   💤  𝑍𝑧𝑧   💤   𝑍𝑧𝑧   💤‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎
+✭  ✭  ✭  ✭  ✭  ✭  ✭  ✭
+*https://instagram.com/garciajajs?utm_medium=copy_link*
+✭  ✭  ✭  ✭  ✭  ✭  ✭  ✭
+‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎𝑍𝑧𝑧  💤   𝑍𝑧𝑧   💤   𝑍𝑧𝑧
+   💤  𝑍𝑧𝑧   💤   𝑍𝑧𝑧   💤
+𝑍𝑧𝑧  💤   𝑍𝑧𝑧   💤   𝑍𝑧𝑧
+   💤  𝑍𝑧𝑧   💤   𝑍𝑧𝑧   💤‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎
+‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎⏤͟͟͞͞😈⃟☆ ⏤͟͟͞͞😈⃟☆ ⏤͟͟͞͞😈⃟☆
+⏤͟͟͞͞😈⃟☆ ⏤͟͟͞͞😈⃟☆ ⏤͟͟͞͞😈⃟☆
+⏤͟͟͞͞😈⃟☆ ⏤͟͟͞͞😈⃟☆ ⏤͟͟͞͞😈⃟☆‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎
+‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎𖣘✞︎                          ✞︎𖣘
+    😴ℌ𝔬ℜ𝔞𝔡𝔢𝔡𝔬𝔯𝔪𝔦𝔯😴‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎'" ,
 				"jpegThumbnail": fs.readFileSync(`./src/ara.png`)}}}})
 break
 
@@ -2218,7 +2222,7 @@ await sleep(10000)
 reply('😱')
 break
 	
-//======== _-By Samu330-_ ========\\
+//======== _-By Garcia-_ ========\\
 case 'inspeccionar':
 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) return reply('*Este no es un link de WhatsApp...*')
 if (!q) return reply('*🙄Y el link??...*')
@@ -2434,7 +2438,7 @@ break
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	
-//Juego Creado por Samu330
+//Juego Creado por García
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*////*/case 'jugar':
 /*////*/if (!isRegister) return reply(mess.only.usrReg)
