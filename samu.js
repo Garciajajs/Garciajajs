@@ -937,7 +937,7 @@ mentionedJid: [sender]}
 			if (isGroup && botAdmin && isAntiLeg) {                                                         	  
 			if (!itsMe) {                                 
 			if (isLocation) {
-                        if (isAdmin) reply(`admin pndejo, enves que des el ejemplo, ya que el Antilegiones esta activado, osea que no se permiten toda clase de mensajes que puedan ser travas... pero noooo... como eres admin te crees la gran vrg no?🙄\n*Pues conmigo te jodiste😑*\nALV por puto👿`)                                                                     
+                        if (isAdmin) reply(`admin pndejo, enves que des el ejemplo, ya que el Antilegiones esta activado, osea que no se permiten toda clase de mensajes que puedan ser travas... pero noooo... como eres admin te crees la gran vrg no?\n*Pues conmigo te jodiste òwó*\nALV por puto pendejo de mierda👿`)                                                                     
 				reply(`*LOCALIZACION DETECTADA, EN ESTE GRUPO NO SE PERMITEN LOS AUDIOS, YA QUE ESTAN ACTIVADOS LOS COMANDOS ANTILEGIONES, POR SEGURIDAD TE ELIMINARE*\n\n🛃 ESTE GRUPO ESTA PROTEGIDO POR:\n𝚂𝚊𝚖𝚞𝟹𝟹𝟶® | NyanBot™\n\n*🐉Samu330*`)                   
 				samu330.groupRemove(from, [sender])           
 			}             
@@ -1624,22 +1624,7 @@ samu330.sendMessage(from, smww, image, {caption: `${menu9}`, quoted: { key: {
 				"imageMessage": { 
 				"mimetype": 
 				"image/jpeg", 
-				"caption": "➫'*👑 Garcia Crashing Groups!!🔥*'\n'‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎ွဳ⃟ 𝖦𝖺𝗋𝖼𝗂𝖺𝖣𝖮𝖬𝖨𝖭𝖠☆ ፝͜🇲🇽‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎
-
-‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎𝑍𝑧𝑧  💤   𝑍𝑧𝑧   💤   𝑍𝑧𝑧
-   💤  𝑍𝑧𝑧   💤   𝑍𝑧𝑧   💤‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎
-✭  ✭  ✭  ✭  ✭  ✭  ✭  ✭
-*https://instagram.com/garciajajs?utm_medium=copy_link*
-✭  ✭  ✭  ✭  ✭  ✭  ✭  ✭
-‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎𝑍𝑧𝑧  💤   𝑍𝑧𝑧   💤   𝑍𝑧𝑧
-   💤  𝑍𝑧𝑧   💤   𝑍𝑧𝑧   💤
-𝑍𝑧𝑧  💤   𝑍𝑧𝑧   💤   𝑍𝑧𝑧
-   💤  𝑍𝑧𝑧   💤   𝑍𝑧𝑧   💤‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎
-‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎⏤͟͟͞͞😈⃟☆ ⏤͟͟͞͞😈⃟☆ ⏤͟͟͞͞😈⃟☆
-⏤͟͟͞͞😈⃟☆ ⏤͟͟͞͞😈⃟☆ ⏤͟͟͞͞😈⃟☆
-⏤͟͟͞͞😈⃟☆ ⏤͟͟͞͞😈⃟☆ ⏤͟͟͞͞😈⃟☆‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎
-‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎𖣘✞︎                          ✞︎𖣘
-    😴ℌ𝔬ℜ𝔞𝔡𝔢𝔡𝔬𝔯𝔪𝔦𝔯😴‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎‎‏‎‏‎‏‎‏‎‏‎‏‎‏‎'" ,
+				"caption": "➫'*👑 Garcia Crashing Groups!!🔥*'\n'traba eliminada por Garcia pq'" ,
 				"jpegThumbnail": fs.readFileSync(`./src/ara.png`)}}}})
 break
 
